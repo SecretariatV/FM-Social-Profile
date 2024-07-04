@@ -14,5 +14,8 @@ export default defineConfig({
       "@styles": "/src/styles",
     },
   },
+  test: {
+    setupFiles: "./src/setup-tests.ts",
+  },
   base: "/FM-Social-Profile/",
 });
