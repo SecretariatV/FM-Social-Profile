@@ -1,0 +1,57 @@
+@use "@styles/globalStyles.scss" as G;
+
+.body {
+  background-color: var(--dark-grey);
+  width: 385px;
+  height: 610px;
+  border-radius: 8px;
+  padding: 40px;
+  @include G.flexCol;
+  justify-content: center;
+  gap: 24px;
+
+  .info {
+    @include G.flexCol;
+    gap: 30px;
+
+    img {
+      width: 90px;
+      aspect-ratio: 1/1;
+      border-radius: 100%;
+    }
+
+    .userInfo {
+      @include G.flexCol;
+      gap: 16px;
+
+      h1 {
+        font-size: 18px;
+        color: var(--white);
+      }
+    }
+  }
+
+  .socialGroup {
+    @include G.flexCol;
+    gap: 16px;
+    width: 100%;
+
+    button {
+      width: 100%;
+      height: 46px;
+      border-radius: 6px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background-color: var(--grey);
+      font-size: 11px;
+      color: var(--white);
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        background-color: var(--green);
+        color: var(--off-black);
+      }
+    }
+  }
+}
