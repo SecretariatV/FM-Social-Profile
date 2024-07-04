@@ -1,3 +1,14 @@
+$breakpoints: (
+  "sm": 375px,
+  "lg": 1440px,
+);
+
+@mixin breakpoint($name) {
+  @media (max-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}
+
 @mixin flexCol {
   display: flex;
   flex-direction: column;
